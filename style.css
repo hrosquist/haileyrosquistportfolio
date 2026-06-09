@@ -113,5 +113,92 @@ ul {
     width: 100%;
     height: auto;
   }
+
+  ```css id="mjlwmv"
+/* Resume Page */
+
+.resume-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.resume-name {
+  text-align: center;
+  font-size: 52px;
+  margin-bottom: 10px;
+  color: #4c63ff;
+}
+
+.resume-contact {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.resume-section {
+  margin-bottom: 40px;
+}
+
+.resume-section h2 {
+  border-bottom: 3px solid #4c63ff;
+  padding-bottom: 8px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.resume-job {
+  margin-bottom: 30px;
+}
+
+.resume-job-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: baseline;
+}
+
+.resume-job-header h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.resume-job-header span {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.resume-container ul {
+  margin-top: 10px;
+}
+
+.resume-container li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 800px) {
+
+  .resume-job-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-name {
+    font-size: 38px;
+  }
+
+}
 }
 ```
