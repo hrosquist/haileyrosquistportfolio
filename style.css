@@ -75,41 +75,48 @@ section {
   color: #1f3d5a;
 }
 
+```css
 /* Experience Cards */
 
 .experience {
-  max-width: 1000px;
-  margin: 50px auto;
-  padding: 40px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 45px;
   background-color: white;
-  border-radius: 12px;
-  border: 3px solid #d9d9d9;
+  border-radius: 14px;
+  border: 3px solid #d7d7d7;
 }
 
 .experience h2 {
-  font-size: 38px;
+  font-size: 40px;
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   color: #1f3d5a;
 }
 
 .experience p {
-  font-size: 20px;
-  margin-bottom: 30px;
+  font-size: 21px;
+  margin-bottom: 35px;
 }
 
-.experience img {
+/* BIG IMAGE BELOW TEXT */
+
+.experience-image {
+  display: block;
   width: 100%;
-  border-radius: 10px;
-  border: 3px solid #cfcfcf;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 12px;
+  border: 4px solid #cfcfcf;
   background-color: #f5f5f5;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-.experience img:hover {
+.experience-image:hover {
   transform: scale(1.01);
 }
+```
 
 /* Resume Page */
 
