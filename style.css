@@ -1,72 +1,112 @@
+```css
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f7f7f7;
+  background-color: #f5f5f5;
   color: #222;
   line-height: 1.6;
 }
 
+/* Navigation */
+
 nav {
-  background-color: #222;
-  padding: 15px;
+  background-color: #1f3d5a;
+  padding: 18px;
   text-align: center;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 20px;
+  margin: 0 22px;
   font-weight: bold;
+  font-size: 18px;
 }
 
 nav a:hover {
-  color: #7aa7c7;
+  color: #b7d3e8;
 }
 
-header.hero {
+/* Hero Section */
+
+.hero {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   align-items: center;
-  padding: 40px;
+  padding: 50px;
   background-color: white;
 }
 
 .hero img {
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 12px;
 }
+
+/* General Sections */
 
 section {
   background-color: white;
-  margin: 25px auto;
-  padding: 25px;
-  max-width: 900px;
-  border-radius: 8px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
 }
+
+/* Experience Layout */
 
 .experience {
   display: flex;
-  gap: 25px;
+  gap: 30px;
   align-items: center;
 }
 
 .experience img {
-  width: 260px;
-  height: 180px;
+  width: 280px;
+  height: 190px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
-h1, h2, h3 {
+.experience img:hover {
+  transform: scale(1.03);
+}
+
+/* Headings */
+
+h1,
+h2,
+h3 {
   color: #1f3d5a;
 }
 
-@media (max-width: 700px) {
-  header.hero, .experience {
+.page-title {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Lists */
+
+ul {
+  padding-left: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+  .hero,
+  .experience {
     flex-direction: column;
     text-align: left;
+  }
+
+  .hero img {
+    width: 250px;
+    height: 250px;
   }
 
   .experience img {
@@ -74,3 +114,4 @@ h1, h2, h3 {
     height: auto;
   }
 }
+```
